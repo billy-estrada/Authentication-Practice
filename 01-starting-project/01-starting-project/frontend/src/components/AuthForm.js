@@ -6,6 +6,11 @@ function AuthForm() {
   const [searchParams] = useSearchParams();
   const isLogin = searchParams.get("mode") === "login";
 
+  // const[isLogin, setIsLogin] = useState(true);
+  // function switchAutoHandler(){
+  //   setIsLogin((isCurrentlyLogin) => !isCurrentlyLogin);
+  // }
+
   return (
     <>
       <Form method="post" className={classes.form}>
